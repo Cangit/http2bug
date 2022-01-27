@@ -5,8 +5,8 @@ import fs from "fs";
 const port = 1337;
 const server = http2.createSecureServer(
   {
-    key: fs.readFileSync("./certs/localhost-privkey.pem"),
-    cert: fs.readFileSync("./certs/localhost-cert.pem"),
+    key: fs.readFileSync("./localhost-privkey.pem"),
+    cert: fs.readFileSync("./localhost-cert.pem"),
     allowHTTP1: false,
   },
   handler
